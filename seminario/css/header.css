@@ -1,0 +1,29 @@
+.header{
+    color:blue;
+    max-width: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0px;
+    display:flex ;
+}
+
+#logo{
+    width: 90PX;
+    height: 90px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content:right;
+    gap: 10px;
+    width: 70PX;
+    height: 70px;
+    margin-left: 20PX;
+    
+}
+
+.header-nav:hover{
+    transform: scale(1.2);
+}
+
