@@ -9,8 +9,8 @@
 .container{
     display: grid;
    
-    grid-template-columns: 1200px 1200px 1200px;
-    grid-template-rows: 20px 20px 20px;
+    grid-template-columns: 200px 625px 1000px;
+    grid-template-rows:  100px 900px 100px;
     grid-template-areas: 
       "header header header"
       "aside main main"
@@ -23,15 +23,28 @@
 @import 'main.css';
 @import 'footer.css';
 
-header{
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.header{
     grid-area: header;
-    max-width: 1200px;
-    max-height: 10PX;
-    background-color: teal;
+    background-color: #F3E9DC;
     justify-content: space-between;
     align-items: center;
     margin: 0px;
     display:flex ;
+}
+#logo{
+    margin-left: 10px;
+    width: 75px;
+    height: 100px;
+}
+.header_button{
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+    width: 90PX;
+    height:90px;
+    margin-right: 10px;
 }
 
 
@@ -41,8 +54,88 @@ aside{
 }
 main{
     grid-area: main;
-    background-color: lightblue;
+    
 }
+.title{
+    font-size: 55px;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.produtos_grid_container{
+    width: 100%;
+    height: px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap; 
+}
+.produtos_container{
+    background-color:#5E3023 ;
+    margin-top: -2%;
+    border-radius: 10px;
+    height: 10%;
+    width: 23%;
+    display:flex;
+    justify-items: center;
+    flex-direction: column; /* alinhar como coluna */
+    
+}
+
+.imagem_produto_wrapped{
+    height: 300px;
+    width: 100%;
+    overflow:hidden;/* esconder o que passa da linha do grid  */
+}
+
+.img{
+    height: 168px;
+    width: 300px;
+    
+    margin-left:19px;
+    width: 90%;
+    border-radius: 10px;
+    border: 1.5px solid #5E3023;
+}
+
+.img:hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+.informacoes_produto{
+    margin-left:19px;
+    display: flex;
+    justify-content:start;
+    flex-direction: column;
+
+}
+
+.titulo_produto{
+    margin-left:19px;
+    font-size: 20px;
+    margin: 10px 20px;
+    font-weight: 500px;
+}
+
+.vendedor_produto{
+    margin-left:19px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: pink;
+}
+
+
+
+.preco_produto{
+    margin-left:19px;
+    color: #121212;
+    font-size: 16px;
+    font-weight: 600px;
+}
+
 
 footer{
     grid-area: footer;

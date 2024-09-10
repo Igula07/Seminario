@@ -1,19 +1,27 @@
-
+.header{
+        grid-area: header;
+        background-color: #F3E9DC;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+        display:flex ;
+}
 #logo{
-        width: 0.1fr;
-        height: 0.1fr;
+    margin-left: 10px;
+    width: 75px;
+    height: 100px;
 }
     
-.header-button{
-        display: flex;
-        justify-content:right;
-        gap: 10px;
-        width: 10PX;
-        height:10px;
-        margin-left: 20PX;
+.header_button{
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+    width: 100PX;
+    height:100px;
+    margin-left: PX;
         
 }
     
-.header-nav:button{
+.header_button:button{
      transform: scale(1.2);
 }
