@@ -1,0 +1,19 @@
+
+#logo{
+        width: 0.1fr;
+        height: 0.1fr;
+}
+    
+.header-button{
+        display: flex;
+        justify-content:right;
+        gap: 10px;
+        width: 10PX;
+        height:10px;
+        margin-left: 20PX;
+        
+}
+    
+.header-nav:button{
+     transform: scale(1.2);
+}
